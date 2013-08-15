@@ -1,0 +1,9 @@
+<form action='/user_auth' method='post'>
+	<input type='username' name='username' placeholder='Username'>
+	<input type='password' name='password' placeholder='Password'>
+	<input type='submit' value='Sign in'>
+</form>
+
+<% if session[:login_error] %>
+	<div class='error'>Invalid Username or Password, or both...</div>
+<% end %> 
